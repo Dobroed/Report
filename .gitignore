@@ -33,7 +33,7 @@ index
 /app/data/testdrive.db
 
 # composer
-/app/lib/vendor
+#/app/lib/vendor
 composer.lock
 
 #npm
