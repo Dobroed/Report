@@ -97,7 +97,7 @@ return array(
 	// application components
 	'components' => array(
 'db' => array(
-			'connectionString' => 'mysql:host=niko;dbname=niko',
+			'connectionString' => 'mysql:host=niko;dbname=report',
 			'username' => 'mysql',
 			'password' => 'mysql',
 			'enableProfiling' => true,
