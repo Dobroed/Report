@@ -45,11 +45,13 @@ class SiteController extends EController
 
     public function actionCss(){
         $model = new User();
+      
         $this->layout = '//layouts/column_2';
 
         if(isset($_POST['User']))
         {
-            echo CActiveForm::validate($model);
+           
+          echo CActiveForm::validate($model);
             Yii::app()->end();
         }
         $this->render('css',array('model' => $model));

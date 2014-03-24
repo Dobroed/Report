@@ -201,6 +201,7 @@
         'email'
     ); ?>
     <?php echo $form->dropDownListControlGroup($model, 'profile',
+        
         array('1', '2', '3', '4', '5'),
         array('empty' => 'Something ...')
     ); ?>

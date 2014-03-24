@@ -32,6 +32,14 @@ public $cssClass ;
             'cssClass' => $this->cssClass
         );
     }
+    
+    public function rules()
+    {
+        return array(
+            array('firstname, lastname', 'required','message'=>'обязательны для заполнения'),
+            array('language','length', 'max'=>128, 'min' => 4),
+     );
+    }
 
     public function primaryKey()
     {

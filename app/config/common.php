@@ -27,15 +27,7 @@ return array(
     'modules' => array(
     ),
 	'components' => array(
-        'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=pres',
-            'username' => 'root',
-            'password' => 'root',
-            'enableProfiling' => true,
-            'enableParamLogging' => true,
-            'charset' => 'utf8',
-            'tablePrefix' => 'tbl_'
-        ),
+       
 		'errorHandler' => array(
 			'errorAction' => 'site/error',
 		),

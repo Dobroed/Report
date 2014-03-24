@@ -13,22 +13,25 @@ return array(
 			'class' => 'system.gii.GiiModule',
 			'password' => 'yii',
 			'ipFilters' => array('127.0.0.1','::1'),
+                    'generatorPaths' => array('bootstrap.gii'),
 		),
 	),
 	'components' => array(
-//		modify to suit your needs
-//		'db' => array(
-//			'connectionString' => '{CONNECTION_STRING}',
-//			'username' => '{USERNAME}',
-//			'password' => '{PASSWORD}',
-//			'enableProfiling' => true,
-//			'enableParamLogging' => true,
-//			'charset' => 'utf8',
-//		),
+'db' => array(
+			'connectionString' => 'mysql:host=niko;dbname=niko',
+			'username' => 'mysql',
+			'password' => 'mysql',
+			'enableProfiling' => true,
+			'enableParamLogging' => true,
+			'charset' => 'utf8',
+                            'tablePrefix' => 'tbl_',
 	),
+	),
+	
 	'params' => array(
 		'yii.handleErrors'   => true,
 		'yii.debug' => true,
 		'yii.traceLevel' => 3,
+	
 	)
 );
